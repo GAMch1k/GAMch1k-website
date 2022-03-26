@@ -9,9 +9,9 @@ const app = express();
 app.use(cors());
 // app.use(express.static(path.join(__dirname, '../client/build')));
 
-axios.defaults.validateStatus = function () {
-    return true;
-};
+// axios.defaults.validateStatus = function () {
+//     return true;
+// };
 
 function detectBrowser(_br) { 
     if((_br.indexOf("Opera") || _br.indexOf('OPR')) != -1 ) {
