@@ -1,0 +1,26 @@
+{
+  "name": "gamch1k-website",
+  "version": "1.0.0",
+  "description": "Just my portfolio website. I think it's will be nodeJS and React again",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GAMch1k/GAMch1k-website.git"
+  },
+  "author": "GAMch1k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GAMch1k/GAMch1k-website/issues"
+  },
+  "homepage": "https://github.com/GAMch1k/GAMch1k-website#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "path": "^0.12.7"
+  }
+}
