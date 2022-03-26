@@ -59,15 +59,15 @@ function check_device(ua) { // Remember that this function doesn't already work
 }
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, '../front/main-page/build/index.html'));
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, '../front/main-page/build/index.html'));
 });
 
 app.get('/projects', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, '../front/main-page/build/index.html'));
 });
 
 app.get("/api", (req, res) => {
