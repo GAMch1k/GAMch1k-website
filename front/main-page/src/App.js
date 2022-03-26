@@ -3,7 +3,7 @@ import './App.css';
 import gsap from 'gsap';
 import ReactDOM from 'react-dom';
 
-var curPos = [0, 0];
+var curPos = [];
 function App() {
 
   let _top_div, _bottom_div, _line_under_logo;
@@ -15,7 +15,6 @@ function App() {
   }
 
   function animation_on_start() {
-    let _width = _line_under_logo.offsetWidth;
     gsap.to(_line_under_logo, {duration: 0.8, width: 'calc(60px + 4vw)'});
     ReactDOM.findDOMNode('line-under-logo').style.width = 'width: calc(60px + 4vw)';
   }
@@ -35,7 +34,7 @@ function App() {
       // console.log('top!');
       gsap.to(_top_div, {duration: 0.3, color: 'white'});
       gsap.to(_bottom_div, {duration: 0.3, color: 'rgba(255, 255, 255, 0.15)'});
-    } else {
+    } else if (curPos[1]) {
       // console.log('bottom!');
       gsap.to(_bottom_div, {duration: 0.3, color: 'white'});
       gsap.to(_top_div, {duration: 0.3, color: 'rgba(255, 255, 255, 0.15)'});

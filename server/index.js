@@ -7,7 +7,7 @@ const axios = require('axios').default;
 
 const app = express();
 app.use(cors());
-// app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../front/main-page/build')));
 
 // axios.defaults.validateStatus = function () {
 //     return true;
@@ -57,6 +57,10 @@ function check_device(ua) { // Remember that this function doesn't already work
     if ($.iOS != undefined) {return 'MacPPC'}
     
 }
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 
 app.get("/api", (req, res) => {
