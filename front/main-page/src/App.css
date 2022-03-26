@@ -2,9 +2,28 @@
   text-align: center;
 }
 
+body {
+  overflow: hidden;
+  background-color: #0f0818;
+}
+
+#basement {
+  text-align: left;
+}
+
+.basement-text {
+  color: rgba(255, 255, 255, 0.15);
+  /* color: white; */
+  position: absolute;
+  margin-top: calc((-10px - 2vmin) * 2);
+  margin-left: 3px;
+}
+
 .App-header {
   /* background-color: #282c34; */
-  background-color: #0f0818;
+  /* background-color: #0f0818; */
+  background: rgb(47,25,75);
+background: linear-gradient(135deg, rgba(47,25,75,1) 0%, rgba(15,8,24,1) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,17 +38,29 @@
 }
 
 #line-under-logo {
-  width: calc(60px + 4vw);
+  /* width: calc(60px + 4vw); */
+  width: 1px;
   /* color: rgba(255, 255, 255, 0.6); */
   color: white;
 }
 
 #top-label {
-  margin-bottom: 120px;
+  margin-bottom: 10vh;
   color: rgba(255, 255, 255, 0.15);
 }
 
 #bottom-label {
-  margin-top: 120px;
+  margin-top: 10vh;
   color: rgba(255, 255, 255, 0.15);
 }
+
+#top-label a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#bottom-label a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.15);
+}
+
