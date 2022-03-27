@@ -6,6 +6,7 @@ var cors = require('cors');
 const axios = require('axios').default;
 
 const app = express();
+
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../front/main-page/build')));
 app.use(express.static(path.join(__dirname, '../front/about-page/build')));
@@ -74,7 +75,6 @@ app.get('/projects', (req, res) => {
 app.get("/api", (req, res) => {
     res.json({message: "Hello from GAMch1k"});
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
