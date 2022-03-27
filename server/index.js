@@ -8,6 +8,7 @@ const axios = require('axios').default;
 const app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../front/main-page/build')));
+app.use(express.static(path.join(__dirname, '../front/about-page/build')));
 
 // axios.defaults.validateStatus = function () {
 //     return true;
@@ -63,7 +64,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '../front/main-page/build/index.html'));
+    res.sendFile(path.join(__dirname, '../front/about-page/build/index.html'));
 });
 
 app.get('/projects', (req, res) => {

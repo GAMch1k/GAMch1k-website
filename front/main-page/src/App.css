@@ -9,9 +9,9 @@ body {
   background: linear-gradient(135deg, rgba(47,25,75,1) 0%, rgba(15,8,24,1) 100%);
 }
 
-#basement {
-  /* text-align: left; */
-}
+/* #basement {
+  text-align: left;
+} */
 
 .basement-text {
   color: rgba(255, 255, 255, 0.15);
