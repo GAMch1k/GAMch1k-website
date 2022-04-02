@@ -38,7 +38,8 @@ function App() {
           <hr id="line-under-logo"></hr>
           <p id='about-me-text'>Hello, my name is <strong>Huppa Mykhailo</strong>.</p>
           <p id='about-me-text'>I'm 16 years old programmer from Ukraine.</p>
-          <p id='about-me-text'>I was born in Ukraine, Mykolaiv at 25th November 2005</p>
+          <p id='about-me-text'>I was born in Ukraine, Mykolaiv</p>
+          <p id='about-me-text'>at 25th November 2005</p>
           <p id='about-me-text'>and started programming in 2019.</p>
         {/* </div> */}
       </header>
