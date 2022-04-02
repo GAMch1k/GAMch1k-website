@@ -14,12 +14,12 @@ function App() {
   }
 
   function animation_on_start() {
+    gsap.to(_go_back, {duration: 0.8, "color": 'white'});
+    console.log('animation color back');
     gsap.to(_line_under_logo, {duration: 0.8, width: 'calc(60px + 4vw)'});
     console.log('animation line');
     ReactDOM.findDOMNode('line-under-logo').style.width = 'width: calc(60px + 4vw)';
     console.log('animation line ended');
-    gsap.to(_go_back, {duration: 0.8, color: 'white'});
-    console.log('animation color back');
   }
 
   window.addEventListener('load', (event) => {
